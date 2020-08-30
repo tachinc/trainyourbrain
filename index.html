@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Trainner</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="brainTrainner.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Entrena todos los dias tu cerebro!!!</h1>
+    </header>
+    <nav>
+        <!--<div class="navContainer1">
+            <button type="submit"  onClick="refreshPage()">REINICIAR</button>
+            <a href="http://www.redeletras.com/rules/reglamento2007/reglamento2007.pdf" target="_blank">REGLAS</a>
+            <a href="https://dle.rae.es/" target="_blank">DICCIONARIO</a>
+        </div>-->
+        <button type="submit" class="stasto" onClick="refreshPage()">Re-Iniciar</button>
+        <div class="navContainer2">
+            <h3 id="reloj"></h3>
+            <button type="submit"  class="stasto" onClick="startTimer()">Iniciar</button>
+            <button type="submit"  class="stasto" onClick="stopTimer()">STOP</button>
+        </div>
+    </nav>
+    <main> 
+        <!--<div class="container">
+            <img src="./cerebro.jpeg" alt="">
+        </div>-->
+        <div class="container">
+
+            <form>
+                <select id="jugadores" name="jugadores">
+                        <option value="PAULI">PAULI</option>
+                        <option value="TACHI">TACHI</option>
+                        <option value="BEBA">BEBA</option>
+                        <option value="JCRM">JCRM</option>
+                </select>
+                <h4 id="operando1">0</h4>
+                <h4 id="operador">+</h4>
+                <h4 id="operando2">0</h4>
+                <h4>=</h4>
+                <input type="number" id="resObtenido" min="-99" max="99">
+                <input type="button" id="sumaButton" value="OK">
+            </form>
+                <div class= "messageArea" id=messageArea>
+                    Correctas:
+                </div>
+        </div>
+    </main>
+    <footer>
+        <h4>All rights reserved to TachINC Ltd.</h4>
+    </footer>
+</body>
+</html>
